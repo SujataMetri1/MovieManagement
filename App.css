@@ -1,38 +1,91 @@
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f7fb;
-  color: #222;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 .container {
-  max-width: 1024px;
-  margin: 2rem auto 4rem;
-  padding: 0 1rem;
-  background: white;
-  box-shadow: 0 3px 15px rgb(0 0 0 / 0.1);
-  border-radius: 10px;
+  padding: 24px;
+  font-family: "Segoe UI", sans-serif;
+  background: #f5f7fb;
+  min-height: 100vh;
 }
 
+/* Title */
 h1 {
-  text-align: center;
-  color: #004aad;
-  margin-bottom: 1.5rem;
-  user-select: none;
+  margin-bottom: 20px;
+  color: #333;
 }
 
-.no-results {
-  text-align: center;
-  font-size: 1.1rem;
-  margin: 2rem 0;
-  color: #777;
+/* Layout */
+.layout {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+/* Side Panel */
+.side-panel {
+  width: 340px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e7eb;
+}
+
+/* Panel Heading */
+.side-panel h2 {
+  margin-bottom: 12px;
+  color: #222;
+}
+
+/* Text */
+.side-panel p {
+  margin: 6px 0;
+  color: #444;
+  font-size: 14px;
+}
+
+/* Inputs */
+.side-panel input {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+}
+
+.side-panel input:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.15);
+}
+
+/* Buttons */
+.side-panel button {
+  padding: 6px 12px;
+  margin-right: 8px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.2s ease;
+}
+
+/* Button Variants */
+.side-panel button:nth-child(1) {
+  background: #4f46e5;
+  color: white;
+}
+
+.side-panel button:nth-child(2) {
+  background: #ef4444;
+  color: white;
+}
+
+.side-panel button:nth-child(3) {
+  background: #9ca3af;
+  color: white;
+}
+
+.side-panel button:hover {
+  opacity: 0.9;
 }
